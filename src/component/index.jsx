@@ -1,4 +1,5 @@
 import React from 'react';
+import { autorun } from 'mobx';
 import { Provider } from 'mobx-react';
 import { createBrowserHistory } from 'history';
 import { Router, Switch, Route } from 'react-router';

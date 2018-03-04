@@ -10,7 +10,10 @@ class Count extends React.Component {
     const { resource } = this.props;
     return (
       <div>
-        <p>already click {resource.count} times</p>
+        <p>
+          already click {resource.count} times
+        </p>
+        <button onClick={resource.add}>Async Add</button>
         <RecordBoard />
       </div>
     )

@@ -4,7 +4,15 @@ import { inject } from 'mobx-react';
 @inject('resource', 'router')
 class RecordBoard extends React.Component {
   render() {
-    return (<div>count</div>)
+    return (
+      <ul>
+        {
+          this.props.resource.record.map(row => (
+            <li key={row.id}>#{row.id} @ {row.timestamp}</li>
+          ))
+        }
+      </ul>
+    )
   }
 }
 
